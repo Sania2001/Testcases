@@ -11,6 +11,24 @@ def add(x, y):
 
     return x+y
 
+def check(x):
+    if x%7==0:
+        return True
+    else:
+        return False
+
+class Divisible(unittest.TestCase):
+    def test_c1(self):
+        x=14
+        result = check(x)
+        self.assertTrue(result)
+
+    def test_c2(self):
+        x=14
+        result = check(x)
+        self.assertFalse(result)
+
+
 class MyApp1(unittest.TestCase):
 
     def test_case1(self):
